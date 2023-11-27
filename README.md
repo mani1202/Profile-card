@@ -3,7 +3,7 @@
 <p align="center">A sleek profile card displaying basic information.</p>
 
 <p align="center">
-  <a href="https://mani1202.github.io/profile/">Click here to view my Profile Card</a>
+  <a href="https://mani1202.github.io/Profile-card/">Click here to view my Profile Card</a>
 </p>
 
 ## About
