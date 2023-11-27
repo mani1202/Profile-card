@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/back.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #ffffff40;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.image .profile-pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.data h2{
+  font-size: 33px;
+  font-weight: 600;
+}
+span{
+  font-size: 18px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.row .info{
+  text-align: center;
+  padding: 0 20px;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.buttons .btn{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+  background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+}
+.buttons .btn:hover{
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+}
+.social-media-links-container{
+  position: relative;
+  display: flex;
+  margin-top: 12px;
+}
+
+.social-media-links-container li{
+  list-style: none;
+  margin: 6px;
+}
+
+.social-media-links-container li a{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1em;
+  color: #444;
+  text-decoration: none;
+  border: 2px solid black;
+  transition: all 500ms;
+}
+
+.social-media-links-container li a:hover{
+  background-color: black;
+  color: #fff;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+In this example, the HTML code defines a container with a paragraph of text and a "Read More" button. The CSS code in the styles.css file styles the button and provides a hover effect that changes the background color when the button is clicked. The blue color for the button is defined as #007bff and the hover color is a darker shade, #0056b3.
+
+Remember to save the HTML code in an .html file and the CSS code in a .css file, both located in the same directory. When you open the HTML file in a web browser, you should see the styled "Read More" button with the specified colors and hover effect.
+
+
+
+
+User
+there is white background around the button erase it and dont apply any color around the button 
+ChatGPT
+Absolutely, you can achieve that by removing the default button styling. Here's the modified CSS code:
+
+css
+Copy code
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#btn {
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5px;
+            transition: 0.3s all ease;
+            position: relative;
+        }
+
+        #btn:hover {
+            color: #292929;
+        }
+
+        #btn::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            z-index: -1;
+            background-color: #fff;
+            width: 38px;
+            height: 38px;
+            border-radius: 80px;
+            transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        #btn:hover::before {
+            width: 100%;
+        }
+
+        #btn svg {
+            width: 30px;
+            height: 30px;
+            margin-right: 12px;
+        }
+
+        #btn svg path {
+            fill: #292929;
+        }
+
